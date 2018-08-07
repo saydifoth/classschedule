@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 import Icon from './icon';
 
 class Action extends Component {
+
+handleAction = function() {
+    this.props.onclick()
+
+    //document.getElementById('action').classList.add('')
+}.bind(this);
+
     render() {
         return (
-            <button onClick={() => this.props.onClick()} className={`${this.props.className} action`}>
-                { Icon('fas fa-plus-circle') }
-                {/*fas fa-times-circle*/}
-            </button>
+            <a 
+            id='action'
+            onClick={() => this.props.onClick()} 
+            className={`${this.props.className} action`}>
+                
+            </a>
         )
     }
 }
