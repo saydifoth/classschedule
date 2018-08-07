@@ -6,7 +6,7 @@ import {
 export function toggleEnrolled(id) {
     return {
         type: TOGGLE_ENROLLED,
-        payload:id,
+        payload: id
     }
 }
 
