@@ -10,3 +10,10 @@ $font-mont: 'Montserrat';
 $font-lato: 'Lato';
 $font-alegSans: 'Alegreya Sans SC';
 
+@mixin border-left {
+    border-left: 2px solid $color-subtle-gray;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+}
+
